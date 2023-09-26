@@ -1,9 +1,19 @@
-print(‘What is your name?’) 
+import time
+
+start_time = time.time()
+
+print('What is your name?') 
 
 myName = input() 
 
-print(‘Hello, ‘ + myName + ‘. That is a good name. How old are you?’) 
+print('Hello, ' + myName + '. That is a good name. How old are you?') 
 
-myAge = input() 
+myAge = int(input()) 
 
-print(myAge+’? That’s funny, I'm only a few seconds old.’) 
+programAge = int(time.time() - start_time)
+
+print('%s? That is funny, I am only a %s seconds old' % (myAge, programAge))
+
+print('I wish I was %s years old' % (myAge * 2))
+
+time.sleep(3)
