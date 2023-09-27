@@ -4,19 +4,21 @@ import random
 
 def getAuto():
 
-	getAuto = random.randint(1, 200)
+	return random.randint(1, 100)
 
-print('Pick a number between 1 and 200')
+print('Pick a number between 1 and 100')
+
+auto_number = getAuto()
 	
 while True: 
 		
 		
 		guess = int(input("What is your guess: "))
 	 
-		if guess < getAuto:
+		if guess < auto_number:
 			print('Higher. Guess again.')
 
-		elif guess > getAuto:
+		elif guess > auto_number:
 			print('Lower. Guess again.')
 
 		else:
