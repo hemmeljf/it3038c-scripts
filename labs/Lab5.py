@@ -2,9 +2,8 @@
 
 import random
 
-def number_game():
+def getAuto():
 
-	
 	getAuto = random.randint(1, 200)
 
 print('Pick a number between 1 and 200')
@@ -17,7 +16,7 @@ while True:
 		if guess < getAuto:
 			print('Higher. Guess again.')
 
-		elif guess < getAuto:
+		elif guess > getAuto:
 			print('Lower. Guess again.')
 
 		else:
