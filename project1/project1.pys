@@ -1,7 +1,7 @@
 ##3. Write a script that will tell you the time
-##I used this site as a guide: 
+##I used this site below as a guide:
 ##Kaplarevic, Vladimir. “How to Get Current Date &amp; Time in Python {easy Options}.” Knowledge Base by phoenixNAP, 9 Aug. 2023, phoenixnap.com/kb/get-current-date-time-python. 
-##I ran this script in powershell using python project.pys
+##I ran this script in powershell using python project1.pys
 
 
 import time
