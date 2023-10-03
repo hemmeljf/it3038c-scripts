@@ -1,0 +1,7 @@
+##This script will tell you the time
+
+import time
+
+time_now = time.strftime("%H:%M:%S")
+
+print("The time is: ", time_now)
