@@ -44,10 +44,10 @@ http.createServer(function(req, res){
 console.log("Server listening on port 3000");
 
 function formatUptime(uptime) {
-	const days = Math.floor(uptime / (60 * 60 * 24));
-	const hours = Math.floor((uptime % (60 * 60 * 24)) / (60 * 60));
-	const minutes = Math.floor((uptime % (60 * 60)) / 60);
-	const seconds = Math.floor(uptime % 60);
+	 days = Math.floor(uptime / (60 * 60 * 24));
+	 hours = Math.floor((uptime % (60 * 60 * 24)) / (60 * 60));
+	 minutes = Math.floor((uptime % (60 * 60)) / 60);
+	 seconds = Math.floor(uptime % 60);
 	
 	return `${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds`;
 }
