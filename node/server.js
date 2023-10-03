@@ -13,6 +13,10 @@ http.createServer(function(req, res){
 }
     else if(req.url.match("/sysinfo")) {
         myHostName=os.hostname();
+		myUptime=os.uptime();
+		totalMem=Math.round(os.totalmem() / (1024 * 1024));
+		freeMem=Math.round(os.freemem() / (1024 * 1024));
+		numCPU=os.cpus().length;
         html=`    
         <!DOCTYPE html>
         <html>
@@ -22,10 +26,10 @@ http.createServer(function(req, res){
           <body>
             <p>Hostname: ${myHostName}</p>
             <p>IP: ${ip.address()}</p>
-            <p>Server Uptime: </p>
-            <p>Total Memory: </p>
-            <p>Free Memory: </p>
-            <p>Number of CPUs: </p>            
+            <p>Server Uptime: ${formatUptime(myUptime)}</p>
+            <p>Total Memory: ${totalMem} MB</p>
+            <p>Free Memory: ${freeMem} MB</p>
+            <p>Number of CPUs: ${numCPU}</p>            
           </body>
         </html>` 
         res.writeHead(200, {"Content-Type": "text/html"});
@@ -38,3 +42,12 @@ http.createServer(function(req, res){
 }).listen(3000);
 
 console.log("Server listening on port 3000");
+
+function formatUptime(uptime) {
+	const days = Math.floor(uptime / (60 * 60 * 24));
+	const hours = Math.floor((uptime % (60 * 60 * 24)) / (60 * 60));
+	const minutes = Math.floor((uptime % (60 * 60)) / 60);
+	const seconds = Math.floor(uptime % 60);
+	
+	return `${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds`;
+}
