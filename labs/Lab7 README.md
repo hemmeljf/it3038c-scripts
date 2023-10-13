@@ -37,7 +37,8 @@ blur.show()
 
 "Make the image a Thumbnail"
 ```
-
+thumbnail = myImage.thumbnail((100,100))
+myImage.show()
 ```
 
 "Apply a filter to the image"
