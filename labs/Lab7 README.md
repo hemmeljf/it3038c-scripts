@@ -43,7 +43,8 @@ myImage.show()
 
 "Apply a filter to the image"
 ```
-
+black_white = myImage.convert('L')#L in the Pillow library changes the color
+black_white.show()
 ```
 
 Now that we are done, lets deactivate the Pillow plugin
