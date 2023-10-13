@@ -1,7 +1,7 @@
 # LAB 7 - Jake Hemmelgarn
-I used thed plugin in Pillow and here is how to run it to manipulate images. 
+I used the plugin in Pillow and here is how to run it to manipulate images. 
 
-First, let's create a Virtual ENV called scripts on Windows machine
+First, let's create a Virtual ENV called pillow on our Windows machine
 
 ```
 virtualenv ~/venv/pillow
