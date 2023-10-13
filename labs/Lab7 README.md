@@ -9,11 +9,11 @@ virtualenv ~/venv/pillow
 pip install pillow 
 ```
 
-Find and download an image from t internet and save it to your C-drive. 
+Find and download an image from the internet and save it to your C-drive. 
 
 Create a python file and add the following code
-```
 
+```
 from PIL import Image,ImageFilter
 myImage = Image.open('path/to/image.jpg')
 myImage.load
