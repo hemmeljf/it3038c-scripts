@@ -21,7 +21,7 @@ myImage.load
 
 #Add the following code to get the image to populate
 
-````
+```
 myImage.format
 myImage.size
 myImage.show()
@@ -29,18 +29,20 @@ myImage.show()
 
 #Now we can use ImageFilter module to apply a filter to it and show it.
 
-```
 #"BLUR"
+```
 blur = myImage.filter(ImageFilter.BLUR)
 blur.show()
 ```
 
-```
 #"THUMBNAIL"
 ```
 
 ```
+
 #"APPLY FILTER"
+```
+
 ```
 
 #Now that we are done, lets deactivate the Pillow plugin
