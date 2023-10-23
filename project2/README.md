@@ -28,3 +28,38 @@ until_new_year = (new_year - date_today).days
 
 print(f"There are {until_new_year} days until {new_year.year}")
 ```
+
+Now we will play a fun game where you try to guess the right number!
+
+Here is the code that runs the game:
+```
+print("Now that we know some basic, fun info about today, lets play a fun game to pass time!")
+
+import random
+
+def getAuto():
+
+	return random.randint(1, 100)
+
+print('Pick a number between 1 and 100')
+
+auto_number = getAuto()
+	
+while True: 
+		
+		
+		guess = int(input("What is your guess: "))
+	 
+		if guess < auto_number:
+			print('Higher. Guess again.')
+
+		elif guess > auto_number:
+			print('Lower. Guess again.')
+
+		else:
+			print('Congratulations, you guessed the right number')
+```
+
+
+
+
