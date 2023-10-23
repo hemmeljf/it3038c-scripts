@@ -1,6 +1,8 @@
 # Project 2 - Jake Hemmelgarn
 
-This script outputs the time, date, and days until the New Year 
+This script outputs the time, date, and days until the New Year.
+
+There is also a fun game to be played afterwards.
 
 I used the below sites as guides:
 
