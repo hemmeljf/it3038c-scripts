@@ -2,6 +2,8 @@
 
 This script will generate a password for you and also check to make sure that it is strong enough.
 
+I think this is a practical script because some people may have trouble coming up with passwords. This script is a quick way for people to get strong, safe passwords where they can then record in a safe spot. The strength test helps verify that the password is of good quality.
+
 
 I used the below sites as guides:
 
