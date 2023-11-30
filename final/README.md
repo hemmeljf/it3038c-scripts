@@ -9,8 +9,11 @@ I used the below sites as guides:
 
   -  https://hackr.io/blog/python-projects (Number 13 and 6)
 
-I ran this script in powershell using python finalproject.pys
+I ran this script in powershell using:
 
+```
+python finalproject.pys
+```
 
 This will generate the password and print out what it is.
 ```
